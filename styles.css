@@ -40,3 +40,8 @@ footer {
   color: #aaa;
   font-size: 14px;
 }
+
+.company-logo {
+  height: 50px;
+  margin-bottom: 10px;
+}
