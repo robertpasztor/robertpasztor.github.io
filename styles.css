@@ -1,20 +1,37 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #1a1c1f; /* fondo oscuro */
+  color: #f0f0f0; /* texto claro */
   text-align: center;
 }
 
 header {
   padding: 40px 20px;
-  background-color: #222;
-  color: white;
+  background-color: #263248; /* azul grisáceo oscuro */
+  color: #ffffff;
 }
 
 h1 {
   margin-bottom: 10px;
+}
+
+h2 {
+  border-bottom: 2px solid #4f5b6b; /* línea sutil */
+  padding-bottom: 10px;
+  display: inline-block;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+ul {
+  margin-top: 10px;
+  text-align: left;
+  display: inline-block;
+  max-width: 600px;
+  color: #dcdcdc; /* texto intermedio */
 }
 
 .profile-pic {
@@ -23,41 +40,76 @@ h1 {
   border-radius: 50%;
   object-fit: cover;
   margin: 20px 0;
-  border: 3px solid #444;
+  border: 3px solid #5c6c7e;
 }
 
-section {
-  margin: 40px 0;
-  padding: 0 20px;
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  background-color: #2b313a;
+  flex-wrap: wrap;
 }
 
-.job {
-  margin-bottom: 40px;
+.tab-button {
+  background-color: transparent;
+  border: none;
+  padding: 14px 20px;
+  cursor: pointer;
+  color: #e0e0e0;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
-h2 {
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 10px;
-  display: inline-block;
-  margin-bottom: 30px;
+.tab-button:hover,
+.tab-button.active {
+  background-color: #3c4a5a; /* azul oscuro más claro */
+  color: #ffffff;
 }
 
-ul {
-  margin-top: 10px;
-  text-align: left;
-  display: inline-block;
-  max-width: 600px;
-}
-
-footer {
-  text-align: center;
+.tab-content {
+  display: none;
   padding: 20px;
-  color: #aaa;
-  font-size: 14px;
-  background-color: #eee;
+  background-color: #212428; /* gris azulado oscuro */
+  margin-top: 0;
+  color: #ddd;
 }
 
+.tab-content.active {
+  display: block;
+}
+
+/* Company logos */
 .company-logo {
-  height: 90px;
-  margin: 50px 0;
+  width: 90px;
+  margin: 10px auto;
+  display: block;
+  filter: brightness(1);
+}
+
+/* Footer */
+footer {
+  background-color: #263248;
+  color: #bbbbbb;
+  padding: 20px 10px;
+  margin-top: 15px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  width: 50px;
+  height: auto;
+}
+
+footer img {
+  width: 80px;
+  margin-top: 10px;
+  filter: brightness(0.95);
 }

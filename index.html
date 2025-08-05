@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Robert Pasztor</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="images/RobertPasztorLogo1.ico" type="image/x-icon">
+  <link rel="icon" href="images/RobertPasztorLogo1.ico" type="image/x-icon">  
 </head>
 <body>
   <header>
@@ -14,7 +14,17 @@
     <p>Embedded Systems & Test Development Engineer</p>
   </header>
 
-  <section>
+  <!-- Tabs Navigation -->
+  <div class="tabs">
+    <button class="tab-button active" onclick="openTab(event, 'experience')">Experience</button>
+    <button class="tab-button" onclick="openTab(event, 'education')">Education</button>
+    <button class="tab-button" onclick="openTab(event, 'skills')">Skills</button>
+    <button class="tab-button" onclick="openTab(event, 'projects')">Projects</button>
+    <button class="tab-button" onclick="openTab(event, 'contact')">Contact</button>
+  </div>
+
+  <!-- Experience Tab -->
+  <section id="experience" class="tab-content active">
     <h2>Experience</h2>
 
     <div class="job">
@@ -65,20 +75,78 @@
     </div>
   </section>
 
-  <section>
+  <!-- Education Tab -->
+  <section id="education" class="tab-content">
     <h2>Education</h2>
 
-    <div class="edu">
-      <img src="images/udg.png" alt="UDG logo" class="company-logo" />
-      <p><strong>Universidad de Guadalajara</strong><br>
-      Engineering in Communications and Electronics<br>
-      2014 – 2020</p>
+    <div class="edu"></div>
+    	<img src="images/udg.png" alt="UDG logo" class="company-logo" />
+    	<p><strong>Universidad de Guadalajara</strong><br>
+    	Engineering in Communications and Electronics<br>
+    	2014 – 2020</p>
+      <ul>
+        <li>Professional license number: 13687257</li>
+      </ul>
     </div>
-
   </section>
 
-  <footer>
+  <!-- Skills Tab -->
+  <section id="skills" class="tab-content">
+    <h2>Skills</h2>
+
+    <div class="skill"></div>
+      <ul>
+        <li>Embedded Systems Testing</li>
+        <li>Protocols: CAN, LIN, UDS</li>
+        <li>Tools: CANoe, CANape, VectorCAST</li>
+        <li>JIRA, Doors, Git</li>
+        <li>Python, C, CAPL</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects Tab -->
+  <section id="projects" class="tab-content">
+    <h2>Projects</h2>
+
+    <div class="proj"></div>
+      <ul>
+        <li><strong>BCM Test Automation:</strong> Developed automated scripts for validating Body Control Modules using CANoe and CAPL.</li>
+        <li><strong>Gateway ECU Testing:</strong> Created test libraries and reports integrated into Bosch systems.</li>
+        <li><strong>UDS Diagnostic Scripts:</strong> Implemented Python and CAPL tools for UDS command testing.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Tab -->
+  <section id="contact" class="tab-content">
+    <h2>Contact</h2>
+
+    <div class="cont"></div>
+      <p>Email: robertpasztor.contacto@gmail.com</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/robert-brandon-pasztor-segovia-b62612170/" target="_blank">robert-brandon-pasztor-segovia</a></p>
+      <p>GitHub: <a href="https://github.com/robertpasztor" target="_blank">github.com/robertpasztor</a></p>
+    </div>
+  </section>
+
+<footer>
+  <div class="footer-content">
+    <img src="images/RobertPasztorLogo1.png" alt="Logo de Robert Pasztor" class="footer-logo" />
     <p>&copy; 2025 Robert Brandon Pasztor Segovia</p>
-  </footer>
+  </div>
+</footer>
+
+  <script>
+    function openTab(evt, tabName) {
+      const contents = document.querySelectorAll('.tab-content');
+      contents.forEach(content => content.classList.remove('active'));
+
+      const buttons = document.querySelectorAll('.tab-button');
+      buttons.forEach(btn => btn.classList.remove('active'));
+
+      document.getElementById(tabName).classList.add('active');
+      evt.currentTarget.classList.add('active');
+    }
+  </script>
 </body>
 </html>
