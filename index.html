@@ -1,152 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Robert Pasztor</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="images/RobertPasztorLogo1.ico" type="image/x-icon">  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Robert Pasztor | Embedded Software Engineer in Mexico | AUTOSAR &amp; ASPICE</title>
+  <meta name="description" content="Embedded and automotive software engineer in Mexico. AUTOSAR, Automotive SPICE, Embedded C, ECU requirements, software verification, CAN, LIN, UDS and CANoe.">
+  <link rel="canonical" href="https://robertpasztor.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://robertpasztor.com/">
+  <meta property="og:title" content="Robert Pasztor | Embedded &amp; Automotive Software Engineer in Mexico">
+  <meta property="og:description" content="Automotive ECU requirements, software verification and validation, AUTOSAR, ASPICE and embedded systems engineering.">
+  <meta property="og:image" content="https://robertpasztor.com/images/profile-720.jpg">
+  <meta property="og:image:alt" content="Robert Brandon Pasztor Segovia">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Robert Pasztor | Embedded &amp; Automotive Software Engineer in Mexico">
+  <meta name="twitter:description" content="Automotive ECU requirements, software verification and validation, AUTOSAR, ASPICE and embedded systems engineering.">
+  <meta name="twitter:image" content="https://robertpasztor.com/images/profile-720.jpg">
+  <meta name="twitter:image:alt" content="Robert Brandon Pasztor Segovia">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Robert Brandon Pasztor Segovia",
+    "jobTitle": "Embedded Software Engineer",
+    "description": "Embedded and automotive software engineer experienced in ECU requirements engineering, software verification and validation, AUTOSAR environments and Automotive SPICE processes.",
+    "url": "https://robertpasztor.com/",
+    "image": "https://robertpasztor.com/images/profile-720.jpg",
+    "email": "mailto:robertpasztor.contacto@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Guadalajara", "addressRegion": "Jalisco", "addressCountry": "MX" },
+    "sameAs": [
+      "https://www.linkedin.com/in/robert-brandon-pasztor-segovia-b62612170/",
+      "https://github.com/robertpasztor"
+    ],
+    "knowsAbout": ["Embedded systems", "Embedded C", "Automotive software", "Classic AUTOSAR", "Automotive SPICE", "Requirements engineering", "Software verification and validation", "CAN", "LIN", "UDS", "Vector CANoe", "STM32", "ARM Cortex-M", "FreeRTOS"]
+  }
+  </script>
+  <script>
+    try {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'light' || savedTheme === 'dark') document.documentElement.dataset.theme = savedTheme;
+    } catch (error) {
+      console.warn('Theme preference could not be loaded.', error);
+    }
+  </script>
 </head>
 <body>
-  <header>
-    <h1>Robert Brandon Pasztor Segovia</h1>
-    <img src="images/FotoPerfil.jpg" alt="Foto de Robert Brandon Pasztor Segovia" class="profile-pic" />
-    <p>Embedded Systems & Test Development Engineer</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Robert Pasztor, back to top"><span class="brand-mark" aria-hidden="true">RP<span>.</span></span><span class="brand-name">Robert Pasztor</span></a>
+      <nav class="navigation" aria-label="Main navigation">
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch color theme">Theme <span aria-hidden="true">◐</span></button>
+        <a class="header-link" href="https://www.linkedin.com/in/robert-brandon-pasztor-segovia-b62612170/">LinkedIn <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
   </header>
 
-  <!-- Tabs Navigation -->
-  <div class="tabs">
-    <button class="tab-button active" onclick="openTab(event, 'experience')">Experience</button>
-    <button class="tab-button" onclick="openTab(event, 'education')">Education</button>
-    <button class="tab-button" onclick="openTab(event, 'skills')">Skills</button>
-    <button class="tab-button" onclick="openTab(event, 'projects')">Projects</button>
-    <button class="tab-button" onclick="openTab(event, 'contact')">Contact</button>
-  </div>
+  <main id="main">
+    <section class="hero section" id="top" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Embedded &amp; automotive software</p>
+          <p class="hero-name">Hello, I'm Robert Brandon Pasztor Segovia.</p>
+          <h1 id="hero-title">Embedded Software Engineer Specializing in <span>Automotive Software, AUTOSAR and ASPICE</span></h1>
+          <p class="hero-description">Embedded systems engineer connecting automotive ECU requirements, software verification and validation, and CAN communication analysis. Hands-on with Embedded C and Classic AUTOSAR; experienced in Automotive SPICE processes.</p>
+          <div class="button-group">
+            <a class="button button-primary" href="#contact">Contact Me <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/robert-brandon-pasztor-segovia-b62612170/">View LinkedIn <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="Robert-Pasztor-CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="hero-location">Based in Guadalajara, Mexico <span aria-hidden="true">·</span> Open to remote work &amp; relocation</p>
+        </div>
+        <aside class="profile-card" aria-label="Professional profile">
+          <div class="profile-card-top"><span>ENGINEER PROFILE</span><span aria-hidden="true">01 / 04</span></div>
+          <img class="profile-photo" src="images/profile-720.jpg" alt="Robert Brandon Pasztor Segovia" width="720" height="405" fetchpriority="high">
+          <div class="profile-details">
+            <p class="profile-name">Robert Pasztor</p>
+            <p>Embedded Software Engineer<br>Automotive Software Engineer</p>
+            <div class="profile-tags"><span>AUTOSAR</span><span>ASPICE</span><span>V&amp;V</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-  <!-- Experience Tab -->
-  <section id="experience" class="tab-content active">
-    <h2>Experience</h2>
+    <section class="background-strip" aria-label="Professional background">
+      <div class="container background-grid">
+        <div><span class="background-label">AUTOMOTIVE EXPERIENCE</span><strong>Since 2019</strong><span>Industry background</span></div>
+        <div><span class="background-label">ENGINEERING FOCUS</span><strong>Requirements</strong><span>Analysis &amp; traceability</span></div>
+        <div><span class="background-label">QUALITY FOCUS</span><strong>Verification &amp; validation</strong><span>Test design &amp; execution</span></div>
+        <div><span class="background-label">PROCESS KNOWLEDGE</span><strong>AUTOSAR &amp; ASPICE</strong><span>Architecture &amp; process exposure</span></div>
+      </div>
+    </section>
 
-    <div class="job">
-      <img src="images/Continental.jpg" alt="Continental logo" class="company-logo" />
-      <h3>Continental</h3>
-      <p><strong>RD Testing Development Engineer</strong><br>
-      Aug 2023 – Present · 2 yrs 1 mo<br>Guadalajara, Jalisco, Mexico</p>
-      <ul>
-        <li>Leadership in test case design and time management.</li>
-        <li>Requirements analysis, execution, and reporting.</li>
-        <li>Cross-functional testing for BCM modules.</li>
-        <li>Training sessions for new engineers.</li>
-        <li>Tools: CAN/LIN/UDS, CANoe, CANape, Doors, JIRA.</li>
-      </ul>
-    </div>
+    <section class="section" id="about">
+      <div class="container split-heading">
+        <div><p class="eyebrow">01 / WHY HIRE ME</p><h2>Automotive software experience across the lifecycle.</h2></div>
+        <div class="section-intro">
+          <p>I'm an embedded and automotive software engineer in Guadalajara, Mexico, with experience across software requirements engineering, verification and validation, CAN communication analysis, AUTOSAR environments and Automotive SPICE (ASPICE) processes.</p>
+          <p>I translate customer and system needs into testable software requirements, maintain traceability across development artifacts, and collaborate with system, software and test teams to support software quality and reliable automotive electronics.</p>
+          <p class="company-line"><span>INDUSTRY BACKGROUND</span> AUMOVIO <i>·</i> Continental <i>·</i> Bosch <i>·</i> Dextra Technologies</p>
+        </div>
+      </div>
+      <div class="container value-grid">
+        <article class="value-item"><h3>Automotive ECU expertise</h3><p>Body control module and gateway ECU testing, with CAN, LIN and UDS analysis using Vector tools.</p></article>
+        <article class="value-item"><h3>Requirements to validation</h3><p>Requirements reviews, functional models and traceability connect software development with test design and execution.</p></article>
+        <article class="value-item"><h3>AUTOSAR &amp; ASPICE</h3><p>Classic AUTOSAR development and architecture knowledge, alongside experience supporting Automotive SPICE process activities.</p></article>
+        <article class="value-item"><h3>Functional safety interest</h3><p>Interested in functional safety and safety-critical automotive software; my documented experience centers on requirements, verification and software quality.</p></article>
+      </div>
+    </section>
 
-    <div class="job">
-      <p><strong>RD Testing Development Engineer - Intermediate</strong><br>
-      May 2021 – Aug 2023 · 2 yrs 4 mos<br>Guadalajara, Jalisco, Mexico</p>
-      <ul>
-        <li>Requirements analysis and reporting.</li>
-        <li>Testing for BCM modules using CAN/LIN/UDS.</li>
-        <li>Tools: CANoe, CANape, Doors, JIRA.</li>
-      </ul>
-    </div>
+    <section class="section section-muted" id="experience">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">02 / EXPERIENCE</p><h2>Built in the automotive industry.</h2></div><p>From requirements to testing, a practical view of the software development lifecycle.</p></div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-meta"><span class="timeline-number">01</span><p>AUMOVIO</p><span>Sep 2025 – Present</span></div>
+            <div class="timeline-content"><h3>R&amp;D Testing Development Engineer</h3><p class="timeline-subtitle">Requirements engineering &amp; software processes</p>
+              <ul><li>Translate customer and system requirements into testable software requirements and functional models for automotive embedded systems, making expected software behavior clear to development and test teams.</li><li>Maintain end-to-end traceability across requirements, implementation and verification artifacts to support software change assessment and Automotive SPICE compliance.</li><li>Conduct requirements reviews, impact analysis and defect investigation with cross-functional engineering teams to support feature development and software quality.</li></ul>
+              <div class="tags"><span>Requirements</span><span>Functional modeling</span><span>Traceability</span><span>ASPICE</span></div>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-meta"><span class="timeline-number">02</span><p>Continental</p><span>May 2021 – Sep 2025</span></div>
+            <div class="timeline-content"><h3>R&amp;D Testing Development Engineer</h3><p class="timeline-subtitle">Verification &amp; validation · Body control modules</p>
+              <ul><li>Designed, executed and reported requirements-based tests for body control modules (BCMs), supporting software verification and validation across engineering teams.</li><li>Analyzed CAN, LIN and UDS diagnostic communication with Vector CANoe and CANape to investigate ECU behavior; used DOORS and Jira to support requirements and issue tracking.</li><li>Led test-case design and activity planning and trained new engineers, supporting consistent test delivery.</li><li>Progressed from an intermediate role to R&amp;D Testing Development Engineer in August 2023.</li></ul>
+              <div class="tags"><span>BCM</span><span>CAN / LIN / UDS</span><span>CANoe</span><span>CANape</span><span>DOORS</span><span>Jira</span></div>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-meta"><span class="timeline-number">03</span><p>Bosch Mexico</p><span>Jan 2021 – May 2021</span></div>
+            <div class="timeline-content"><h3>Embedded Software Test Engineer</h3><p class="timeline-subtitle">Gateway ECU testing</p>
+              <ul><li>Designed, automated and executed gateway ECU test content using Vector CANoe and VectorCAST to verify software functionality against defined scenarios.</li><li>Supported defect classification and resolution, technical reviews of requirements and software architecture, and formal delivery of test artifacts under established quality processes.</li></ul>
+              <div class="tags"><span>Gateway ECU</span><span>Test automation</span><span>CANoe</span><span>VectorCAST</span></div>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-meta"><span class="timeline-number">04</span><p>Dextra Technologies</p><span>Nov 2019 – Dec 2020</span></div>
+            <div class="timeline-content"><h3>Embedded Test Engineer</h3><p class="timeline-subtitle">Body control module testing</p>
+              <ul><li>Analyzed requirements and designed, executed and reported BCM test cases to support cross-functional software verification.</li><li>Used CAN, LIN, Vector CANoe, CANape and DOORS to support communication analysis and requirements-based testing.</li></ul>
+              <div class="tags"><span>BCM</span><span>Test execution</span><span>CAN / LIN</span><span>DOORS</span></div>
+            </div>
+          </article>
+        </div>
+        <p class="section-note">Additional professional work includes BCM test automation using CANoe and CAPL, and UDS diagnostic scripts using Python and CAPL.</p>
+      </div>
+    </section>
 
-    <div class="job">
-      <img src="images/bosch.jpg" alt="Bosch logo" class="company-logo" />
-      <h3>Bosch México</h3>
-      <p><strong>Embedded Software Test Engineer Jr</strong><br>
-      Jan 2021 – May 2021 · 5 mos<br>Guadalajara, Jalisco, Mexico</p>
-      <ul>
-        <li>Design and automation of test content for Gateway ECUs.</li>
-        <li>Defect resolution, reviews, and standards compliance.</li>
-        <li>Tools: CANoe, Vector CAST.</li>
-      </ul>
-    </div>
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">03 / CORE COMPETENCIES</p><h2>Embedded and automotive software skills.</h2></div><p>Hands-on technologies and engineering practices spanning automotive requirements, development and software quality.</p></div>
+        <div class="card-grid skill-grid">
+          <article class="card"><span class="card-index">01</span><h3>Programming Languages</h3><p>Embedded C · C programming · Python · CAPL</p></article>
+          <article class="card"><span class="card-index">02</span><h3>Embedded Systems</h3><p>Automotive ECUs · Microcontrollers · STM32 · ARM Cortex-M · RTOS · FreeRTOS</p></article>
+          <article class="card"><span class="card-index">03</span><h3>AUTOSAR</h3><p>Classic AUTOSAR development · AUTOSAR architecture · AUTOSAR environments</p></article>
+          <article class="card"><span class="card-index">04</span><h3>Automotive Protocols</h3><p>CAN · LIN · UDS diagnostics · Communication analysis</p></article>
+          <article class="card"><span class="card-index">05</span><h3>Software Processes</h3><p>Automotive SPICE (ASPICE) · V-Model · Requirements engineering · Traceability · Impact analysis · Technical reviews</p></article>
+          <article class="card"><span class="card-index">06</span><h3>Software Testing</h3><p>Verification and validation · Unit and integration testing · Test design · Test execution · Test automation · Defect analysis</p></article>
+          <article class="card"><span class="card-index">07</span><h3>Engineering Tools</h3><p>Vector CANoe · Vector CANape · VectorCAST · DOORS · Jira · Git</p></article>
+          <article class="card"><span class="card-index">08</span><h3>Functional Modeling</h3><p>Software behavior definition · Functional models · Requirements reviews</p></article>
+          <article class="card"><span class="card-index">09</span><h3>Collaboration &amp; Quality</h3><p>Cross-functional engineering · Technical reviews · Test reporting · Engineer training · Software quality</p></article>
+        </div>
+      </div>
+    </section>
 
-    <div class="job">
-      <img src="images/dextralogo.jpg" alt="Dextra logo" class="company-logo" />
-      <h3>Dextra Technologies</h3>
-      <p><strong>Embedded Test Engineer Jr</strong><br>
-      Nov 2019 – Dec 2020 · 1 yr 2 mos<br>Guadalajara, Mexico</p>
-      <ul>
-        <li>Test case design and execution for BCM modules.</li>
-        <li>Tools: CAN/LIN/UDS, CANoe, CANape, Doors, JIRA.</li>
-      </ul>
-    </div>
-  </section>
+    <section class="section section-muted" id="certifications">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">04 / CONTINUED LEARNING</p><h2>Certifications</h2></div><p>Training in automotive software processes, AUTOSAR, programming and software testing.</p></div>
+        <div class="card-grid certification-grid">
+          <article class="card certification-card"><p class="certification-meta">Udemy · Sep 2025</p><h3>Automotive SPICE® Software Processes (SWE.1–SWE.6, PAM 4.0)</h3><a href="https://www.udemy.com/certificate/UC-355ec37c-d4f5-495a-ac98-7f2dc5468be2/" aria-label="View Automotive SPICE Software Processes credential">View credential <span aria-hidden="true">↗</span></a></article>
+          <article class="card certification-card"><p class="certification-meta">Udemy · Sep 2025</p><h3>Autosar Architecture</h3><a href="https://www.udemy.com/certificate/UC-5a1b3e8e-328f-4ca1-bb1f-32a8202d4c24/" aria-label="View Autosar Architecture credential">View credential <span aria-hidden="true">↗</span></a></article>
+          <article class="card certification-card"><p class="certification-meta">EDUCBA · Oct 2025</p><h3>Introduction to AutoSAR</h3><a href="https://www.coursera.org/account/accomplishments/records/B3RTJLMV8T0O" aria-label="View Introduction to AutoSAR credential">View credential <span aria-hidden="true">↗</span></a></article>
+          <article class="card certification-card"><p class="certification-meta">Udemy · Dec 2019</p><h3 lang="es">Introducción al Testing de Software</h3><a href="https://www.udemy.com/certificate/UC-2EEPIBVC/" aria-label="View Introducción al Testing de Software credential">View credential <span aria-hidden="true">↗</span></a></article>
+          <article class="card certification-card"><p class="certification-meta">LinkedIn · Sep 2020</p><h3 lang="es">C esencial</h3><a href="https://www.linkedin.com/learning/certificates/1a77b43eda0457ffd201f0edb85b78d61164cab98424510bbd9eefb60a24d94f" aria-label="View C esencial credential">View credential <span aria-hidden="true">↗</span></a></article>
+          <article class="card certification-card"><p class="certification-meta">Udemy · Apr 2020</p><h3>Learn Python 3 from scratch to become a developer in demand</h3><a href="https://www.udemy.com/certificate/UC-d97eb6b6-2c0a-46fe-884d-4e3c16252123/" aria-label="View Learn Python 3 credential">View credential <span aria-hidden="true">↗</span></a></article>
+          <article class="card certification-card"><p class="certification-meta">Universidad Nacional Autónoma de México (UNAM) · Nov 2026</p><h3 lang="es">Análisis y generación de información con Inteligencia Artificial</h3><p class="credential-id">Credential ID: 100737</p></article>
+        </div>
+        <p class="section-note">See all certifications on <a href="https://www.linkedin.com/in/robert-brandon-pasztor-segovia-b62612170/">LinkedIn <span aria-hidden="true">↗</span></a>.</p>
+      </div>
+    </section>
 
-  <!-- Education Tab -->
-  <section id="education" class="tab-content">
-    <h2>Education</h2>
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">05 / EDUCATION</p><h2>Engineering foundations.</h2></div><p>Formal education in communications and electronics engineering.</p></div>
+        <article class="education-card"><span class="card-index">EDUCATION</span><h3>Universidad de Guadalajara</h3><p>Engineering in Communications and Electronics</p><p class="muted">2014 – 2020 · Professional license: 13687257</p></article>
+      </div>
+    </section>
 
-    <div class="edu"></div>
-    	<img src="images/udg.png" alt="UDG logo" class="company-logo" />
-    	<p><strong>Universidad de Guadalajara</strong><br>
-    	Engineering in Communications and Electronics<br>
-    	2014 – 2020</p>
-      <ul>
-        <li>Professional license number: 13687257</li>
-      </ul>
-    </div>
-  </section>
+    <section class="section section-muted" id="faq">
+      <div class="container faq-layout">
+        <div><p class="eyebrow">06 / GOOD TO KNOW</p><h2>Frequently asked questions.</h2><p class="muted">A few details for recruiters and engineering teams.</p></div>
+        <div class="faq-list">
+          <details><summary>What automotive domains have you worked on?</summary><p>My experience includes body control modules (BCM) and gateway ECUs, with a focus on software requirements, testing and quality.</p></details>
+          <details><summary>Which communication protocols do you use?</summary><p>I have worked with CAN, LIN and UDS, including communication analysis with Vector tools such as CANoe and CANape.</p></details>
+          <details><summary>Do you have AUTOSAR experience?</summary><p>I have hands-on Classic AUTOSAR development experience and knowledge of AUTOSAR architecture, supported by continued learning in the subject.</p></details>
+          <details><summary>Are you familiar with ASPICE?</summary><p>Yes. I have supported ASPICE-based development processes, including requirements reviews, traceability and verification activities.</p></details>
+          <details><summary>What is your functional safety background?</summary><p>I am interested in functional safety and safety-critical automotive software. My experience presented here focuses on requirements, traceability, verification and software quality; it does not claim ISO 26262 certification or a dedicated functional safety role.</p></details>
+          <details><summary>Are you open to remote opportunities?</summary><p>Yes, I am open to remote opportunities.</p></details>
+          <details><summary>Are you open to relocation opportunities?</summary><p>Yes, I am open to relocation opportunities.</p></details>
+        </div>
+      </div>
+    </section>
 
-  <!-- Skills Tab -->
-  <section id="skills" class="tab-content">
-    <h2>Skills</h2>
-
-    <div class="skill"></div>
-      <ul>
-        <li>Embedded Systems Testing</li>
-        <li>Protocols: CAN, LIN, UDS</li>
-        <li>Tools: CANoe, CANape, VectorCAST</li>
-        <li>JIRA, Doors, Git</li>
-        <li>Python, C, CAPL</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Projects Tab -->
-  <section id="projects" class="tab-content">
-    <h2>Projects</h2>
-
-    <div class="proj"></div>
-      <ul>
-        <li><strong>BCM Test Automation:</strong> Developed automated scripts for validating Body Control Modules using CANoe and CAPL.</li>
-        <li><strong>Gateway ECU Testing:</strong> Created test libraries and reports integrated into Bosch systems.</li>
-        <li><strong>UDS Diagnostic Scripts:</strong> Implemented Python and CAPL tools for UDS command testing.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Contact Tab -->
-  <section id="contact" class="tab-content">
-    <h2>Contact</h2>
-
-    <div class="cont"></div>
-      <p>Email: robertpasztor.contacto@gmail.com</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/robert-brandon-pasztor-segovia-b62612170/" target="_blank">robert-brandon-pasztor-segovia</a></p>
-      <p>GitHub: <a href="https://github.com/robertpasztor" target="_blank">github.com/robertpasztor</a></p>
-    </div>
-  </section>
-
-<footer>
-  <div class="footer-content">
-    <img src="images/RobertPasztorLogo1.png" alt="Logo de Robert Pasztor" class="footer-logo" />
-    <p>&copy; 2025 Robert Brandon Pasztor Segovia</p>
-  </div>
-</footer>
-
+    <section class="section contact-section" id="contact">
+      <div class="container contact-inner">
+        <div><p class="eyebrow">07 / GET IN TOUCH</p><h2>Let's Work Together<span>.</span></h2><p>Looking for someone who understands both automotive software and the processes that make it reliable? I'd love to hear about your team and opportunity.</p></div>
+        <div class="contact-actions"><a class="button button-primary" href="mailto:robertpasztor.contacto@gmail.com">Email Me <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="https://www.linkedin.com/in/robert-brandon-pasztor-segovia-b62612170/">Connect on LinkedIn <span aria-hidden="true">↗</span></a><a class="contact-email" href="mailto:robertpasztor.contacto@gmail.com">robertpasztor.contacto@gmail.com</a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><p>© <span id="year">2026</span> Robert Brandon Pasztor Segovia</p><div><a href="Robert-Pasztor-CV.pdf" download>Download CV</a><a href="https://github.com/robertpasztor">GitHub</a><a href="https://www.linkedin.com/in/robert-brandon-pasztor-segovia-b62612170/">LinkedIn</a><a href="#top">Back to top ↑</a></div></div></footer>
   <script>
-    function openTab(evt, tabName) {
-      const contents = document.querySelectorAll('.tab-content');
-      contents.forEach(content => content.classList.remove('active'));
-
-      const buttons = document.querySelectorAll('.tab-button');
-      buttons.forEach(btn => btn.classList.remove('active'));
-
-      document.getElementById(tabName).classList.add('active');
-      evt.currentTarget.classList.add('active');
+    const themeButton = document.querySelector('.theme-toggle');
+    function currentTheme() {
+      return document.documentElement.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     }
+    function updateThemeButton() {
+      themeButton.setAttribute('aria-label', 'Switch to ' + (currentTheme() === 'dark' ? 'light' : 'dark') + ' theme');
+    }
+    updateThemeButton();
+    themeButton.addEventListener('click', () => {
+      const theme = currentTheme() === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = theme;
+      updateThemeButton();
+      try {
+        localStorage.setItem('theme', theme);
+      } catch (error) {
+        console.warn('Theme preference could not be saved.', error);
+      }
+    });
+    matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateThemeButton);
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
